@@ -3,7 +3,10 @@ import React from 'react'
 import { Logo, CustomLink } from '../index'
 
 
+
 const Navbar = () => {
+
+
   return (
     <header className='w-full px-32 py-8 font-medium flex items-center justify-between' >
       <nav className='space-x-6'>
