@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
 import { Logo, CustomLink } from '../index'
+import { GithubIcon, LinkedInIcon, XIcon } from './icons'
+import { motion } from 'framer-motion'
 
 
 
@@ -14,10 +16,10 @@ const Navbar = () => {
         <CustomLink href='./' title="About"/>
         <CustomLink href='./' title="Contact" />
       </nav>
-      <nav>
-        <Link href="" target={'_blank'}>X</Link>
-        <Link href="" target={'_blank'}>Linkedin</Link>
-        <Link href="" target={'_blank'}>Github</Link>
+      <nav className='flex items-center justify-center flex-wrap'>
+        <motion.a href="" target={'_blank'} whileHover={{y:-2}}><XIcon /></motion.a>
+        <motion.a href="" target={'_blank'} whileHover={{y:-2}}><LinkedInIcon /></motion.a>
+        <motion.a href="" target={'_blank'} whileHover={{y:-2}}><GithubIcon /></motion.a>
       </nav>
       <div className='absolute left-[50%] top-2 translate-x-[-50% ]'>
       <Logo />
