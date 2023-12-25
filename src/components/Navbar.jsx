@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import { Logo } from '../index'
 
 const Navbar = () => {
   return (
@@ -9,7 +10,7 @@ const Navbar = () => {
         <Link href='./'>About</Link>
         <Link href='./'>Projects</Link>
       </nav>
-      <h2></h2>
+      <Logo />
       <nav>
         <Link href="" target={'_blank'}>X</Link>
         <Link href="" target={'_blank'}>Linkedin</Link>
