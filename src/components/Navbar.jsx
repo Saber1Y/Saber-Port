@@ -16,10 +16,10 @@ const Navbar = () => {
         <CustomLink href='./' title="About"/>
         <CustomLink href='./' title="Contact" />
       </nav>
-      <nav className='flex items-center justify-center flex-wrap'>
-        <motion.a href="" target={'_blank'} whileHover={{y:-2}}><XIcon /></motion.a>
-        <motion.a href="" target={'_blank'} whileHover={{y:-2}}><LinkedInIcon /></motion.a>
-        <motion.a href="" target={'_blank'} whileHover={{y:-2}}><GithubIcon /></motion.a>
+      <nav className='flex items-center justify-center flex-wrap space-x-3'>
+        <motion.a href="" target={'_blank'} whileHover={{y:-2}} whileTap={{ scale: 0.8 }} className='w-6'><XIcon /></motion.a>
+        <motion.a href="" target={'_blank'} whileHover={{y:-2}} whileTap={{ scale: 0.8 }} className='w-6'><LinkedInIcon /></motion.a>
+        <motion.a href="" target={'_blank'} whileHover={{y:-2}} whileTap={{ scale: 0.8 }} className='w-6'><GithubIcon /></motion.a>
       </nav>
       <div className='absolute left-[50%] top-2 translate-x-[-50% ]'>
       <Logo />
