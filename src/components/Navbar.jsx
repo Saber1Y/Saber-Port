@@ -15,6 +15,7 @@ const Navbar = () => {
         <CustomLink href='./' title="Home" />
         <CustomLink href='./' title="About"/>
         <CustomLink href='./' title="Contact" />
+        <CustomLink href='./' title="Projects" />
       </nav>
       <nav className='flex items-center justify-center flex-wrap space-x-3'>
         <motion.a href="" target={'_blank'} whileHover={{y:-2}} whileTap={{ scale: 0.8 }} className='w-6'><XIcon /></motion.a>
