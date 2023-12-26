@@ -16,7 +16,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        mont: ['var(--font-mont)', ...fontFamily.sans]
+        mont: ['var(--font-mont)', ...fontFamily.sans],
+        mono: ['Roboto Mono', 'monospace']
       },
       colors: {
         dark: "#1b1b1b",
