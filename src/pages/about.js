@@ -1,6 +1,8 @@
 import AnimatedText from '@/components/AnimatedText'
 import Head from 'next/head'
 import React from 'react'
+import { techsaber } from '../../public/images/techsaber.png'
+import Image from 'next/image'
 
 const about = () => {
     return (
