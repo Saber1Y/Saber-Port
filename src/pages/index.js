@@ -70,7 +70,7 @@ export default function Home() {
                 I'm a highly motivated Full Stack Web3 Engineer with a deep passion for crafting innovative and efficient solutions. My expertise lies in building robust applications that leverage the latest web technologies, ensuring a seamless and interactive user experience. I thrive on challenges and am dedicated to staying at the forefront of emerging trends in the ever-evolving world of web development.
               </p>
               <div className='flex items-center space-x-4'>
-                <Link type="button" class="text-white bg-gradient-to-r to-emerald-600 from-sky-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" href="/resume.pdf" target={'_blank'} >
+                <Link type="button" class="text-white bg-gradient-to-r to-emerald-600 from-sky-400  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" href="/resume.pdf" target={'_blank'} >
                   Resume
                   <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
