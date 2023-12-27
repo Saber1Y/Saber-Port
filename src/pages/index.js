@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Hero } from '../index'
+import { Hero, Hire } from '../index'
 import Saber from '../../public/images/profile/Saber.png'
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
@@ -90,6 +90,7 @@ export default function Home() {
             </div>
           </div>
         </motion.div>
+        <Hire />
       </main>
     </>
   )
