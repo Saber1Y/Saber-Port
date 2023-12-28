@@ -1,7 +1,6 @@
 import AnimatedText from '@/components/AnimatedText'
 import Head from 'next/head'
 import React from 'react'
-import { techsaber } from '../../public/images/techsaber.png'
 import Image from 'next/image'
 
 const about = () => {
@@ -13,7 +12,7 @@ const about = () => {
             </Head>
             <main>
                 <AnimatedText text="Translating ideas into Execution." />
-                <div className='grid w-full grid-cols-8 gap-18'>
+                <div className='grid w-full grid-cols-8 gap-10 mt-5'>
                     <div className='col-span-3 flex flex-col items-start justify-start ml-6'>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark'>Biography</h2>
                         <p className='font-medium'>Hello! I'm Saber a passionate frontend developer, web3
@@ -43,7 +42,8 @@ const about = () => {
                             challenges to deliver meaningful and impactful solutions.</p>
                     </div>
                     <div className='col-span-3 relative h-max rounded-2xl border-dark border-solid border-2 bg-light p-8 '>
-
+                        <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' />
+                        <img src='/Images/techsaber.png' className='w-auto h-auto bg-dark' alt='saber' />
                     </div>
                 </div>
             </main>

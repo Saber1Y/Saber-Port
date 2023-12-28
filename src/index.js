@@ -4,10 +4,7 @@ import CustomLink from "./components/CustomLink";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Hire from "./components/Hire";
-
-// export const CircularText = ({ className, ...rest })
-// <Imag />
-// );
+import Skills from "./components/Skills";
 
 export {
     Navbar,
@@ -15,5 +12,6 @@ export {
     CustomLink,
     Hero,
     Footer,
-    Hire
+    Hire,
+    Skills  
 }
