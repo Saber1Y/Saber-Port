@@ -2,6 +2,7 @@ import AnimatedText from '@/components/AnimatedText'
 import Head from 'next/head'
 import React from 'react'
 import Image from 'next/image'
+import { Skills } from '../index'
 
 const about = () => {
     return (
@@ -41,11 +42,30 @@ const about = () => {
                             believe in continuous learning, staying adaptable, and embracing new
                             challenges to deliver meaningful and impactful solutions.</p>
                     </div>
-                    <div className='col-span-3 relative h-max rounded-2xl border-dark border-solid border-2 bg-light p-8 '>
-                        <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' />
+                    <div className='relative col-span-3 h-max rounded-2xl border-dark border-solid border-2 bg-light p-8'>
+                        <div className='absolute top-0 -right-5 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' />
                         <img src='/Images/techsaber.png' className='w-auto h-auto bg-dark' alt='saber' />
                     </div>
+
+                    <div className='flex flex-col space-y-0 items-center justify-evenly'>
+                        <div className='flex flex-col items-end justify-center'>
+                            <span className=' font-bold text-4xl lg:text-7xl'>0+</span>
+                            <h2 className='text-xl font-medium capitalize text-dark/75'>Satisfied Client</h2>
+                        </div>
+
+                        <div className='flex flex-col items-end justify-center'>
+                            <span className=' font-bold text-4xl lg:text-7xl'>15+</span>
+                            <h2 className='text-xl font-medium capitalize text-dark/75'>Completed Projects</h2>
+                        </div>
+
+                        <div className='flex flex-col items-end justify-center'>
+                            <span className=' font-bold text-4xl lg:text-7xl'>1+</span>
+                            <h2 className='text-xl font-medium capitalize text-dark/75'>Year's Of Exprience</h2>
+                        </div>
+                    </div>
+
                 </div>
+                <Skills />
             </main>
         </>
     )
