@@ -60,7 +60,7 @@ const about = () => {
 
                         <div className='flex flex-col items-end justify-center'>
                             <span className=' font-bold text-4xl lg:text-7xl'>1+</span>
-                            <h2 className='text-xl font-medium capitalize text-dark/75'>Year's Of Exprience</h2>
+                            <h2 className='text-xl font-medium capitalize text-dark/75'>Year's Of Coding Exprience</h2>
                         </div>
                     </div>
 
