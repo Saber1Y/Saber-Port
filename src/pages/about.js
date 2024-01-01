@@ -1,10 +1,39 @@
+import { useEffect, useRef } from 'react'
 import AnimatedText from '@/components/AnimatedText'
 import Head from 'next/head'
 import React from 'react'
 import Image from 'next/image'
 import { Skills } from '../index'
+import { useInView, useMotionValue, useSpring } from 'framer-motion';
+
 
 const about = () => {
+
+    const Animatedtxt = ({ value }) => {
+        const ref = useRef(null);
+
+        const motionValue = useMotionValue(0);
+        const spring = useSpring({ motionValue, duration: 2000 });
+        const isInView = useInView(ref);
+
+        useEffect(() => {
+            console.log('Effect triggered!');
+            if (isInView) {
+                motionValue.set(value)
+            }
+        }, [isInView, value, motionValue])
+
+        useEffect(() => {
+            spring.on("change", (latest) => {
+             if (ref.current && latest.toFixed(0) <= value) {
+                ref.current.textContent = latest.toFixed(0);
+             }
+            })
+        }, [spring, value])
+
+        return <span ref={ref}></span>
+    }
+
     return (
         <>
             <Head>
@@ -49,7 +78,9 @@ const about = () => {
 
                     <div className='flex flex-col space-y-0 items-center justify-evenly'>
                         <div className='flex flex-col items-end justify-center'>
-                            <span className=' font-bold text-4xl lg:text-7xl'>0+</span>
+                            <span className=' font-bold text-4xl lg:text-7xl'>
+                                <Animatedtxt value="50" />+
+                            </span>
                             <h2 className='text-xl font-medium capitalize text-dark/75'>Satisfied Client</h2>
                         </div>
 
@@ -60,7 +91,7 @@ const about = () => {
 
                         <div className='flex flex-col items-end justify-center'>
                             <span className=' font-bold text-4xl lg:text-7xl'>1+</span>
-                            <h2 className='text-xl font-medium capitalize text-dark/75'>Year's Of Coding Exprience</h2>
+                            <h2 className='text-xl font-medium capitalize text-dark/75'>Year's Of Exprience</h2>
                         </div>
                     </div>
 
