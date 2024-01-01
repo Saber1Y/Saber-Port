@@ -5,6 +5,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Skills } from '../index'
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
+import Exprience from '@/components/Exprience'
 
 
 const about = () => {
@@ -97,6 +98,7 @@ const about = () => {
 
                 </div>
                 <Skills />
+                <Exprience />
             </main>
         </>
     )
