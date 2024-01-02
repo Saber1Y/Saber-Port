@@ -16,7 +16,7 @@ const Exprience = () => {
 
       <div ref={ref} className='w-full mx-auto relative space-y-5'>
 
-        <motion.div style={{scaleY: scrollYProgress}} className='absolute left-8 top-0 w-[4px] h-full bg-dark origin-top' />
+        <motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-0 w-[4px] h-screen bg-dark origin-top ml-48' />
 
         <ul>
             <Details 
