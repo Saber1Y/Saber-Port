@@ -66,14 +66,6 @@ const Exprience = () => {
             workDetails="Worked on the UI with React & Tailwind"
             />
         </ul>
-        <ul>
-            <Details 
-            position="Front-End Intern" company="dammy.org"
-            companyLink="www.dammy.org"
-            year="2023 - present" address="CA"
-            workDetails="Worked on the UI with React & Tailwind"
-            />
-        </ul>
       </div>
     </div>
   )
