@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <header
-      className="w-full px-32 py-8 font-medium md:flex md:items-center md:justify-between"
+      className="w-full px-32 py-8 font-medium md:flex md:items-center md:justify-between md:flex-row" 
       id="Home"
     >
       <nav className="space-x-6 md:text-xl hidden">
