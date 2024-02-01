@@ -10,7 +10,7 @@ const Navbar = () => {
       className="w-full px-32 py-8 font-medium md:flex md:items-center md:justify-between md:flex-row"
       id="Home"
     >
-      <nav className="space-x-6 md:text-xl hidden">
+      <nav className="space-x-6 md:text-xl md:block hidden">
         <CustomLink href="./" title="Home" />
         <CustomLink href="./about" title="About" />
         <CustomLink href="./" title="Contact" />

@@ -47,7 +47,7 @@ export default function Home() {
       </Head>
       <main className='flex items-center text-dark w-full min-h-screen'>
         <motion.div className='w-full h-full inline-block z-0 bg-light p-8 lg:p-32 pt-0' variants={singleWord} initial="initial" animate="animate">
-          <div className='md:flex md:items-center md:justify-between flex-col w-full'>
+          <div className='md:flex md:items-center md:justify-between  w-full'>
             <div className='w-full lg:w-2/3'>
               <motion.h2 className='text-3xl leading-7 tracking-tight lg:text-5xl' variants={animate} initial="initial" animate="animate">Hello 👋🏾, I'm Saber </motion.h2>
               <p className="font-extrabold  text-3xl pt-3 leading-8 tracking-tight font-mono no-underline sm:text-2xl md:text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
