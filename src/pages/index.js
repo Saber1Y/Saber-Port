@@ -70,19 +70,55 @@ export default function Home() {
                 I'm a highly motivated Full Stack Web3 Engineer with a deep passion for crafting innovative and efficient solutions. My expertise lies in building robust applications that leverage the latest web technologies, ensuring a seamless and interactive user experience. I thrive on challenges and am dedicated to staying at the forefront of emerging trends in the ever-evolving world of web development.
               </p>
               <div className='flex items-center space-x-4'>
-                <Link type="button" className="text-white bg-gradient-to-r to-emerald-600 from-sky-400  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:bg-transparent" href="/resume.pdf" target={'_blank'} >
-                  Resume
-                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                  </svg>
-                </Link>
-                <Link type="button" className="text-white bg-gradient-to-r to-emerald-600 from-sky-400  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" href="mailto:akintobiayodeji1@gmail.com" target={'_blank'} >
-                  <svg class="w-3.5 h-3.5 text-white me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
-                    <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
-                    <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
-                  </svg>
-                  Mail
-                </Link>
+                <motion.div
+                  whileHover={{ scale: 1, rotate: 10 }}
+                >
+                  <Link
+                    type="button"
+                    className="text-white bg-gradient-to-r to-emerald-600 from-sky-400  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:bg-transparent"
+                    href="/resume.pdf"
+                    target="_blank"
+                  >
+                    Resume
+                    <svg
+                      className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </Link>
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1, rotate: 10 }}
+                >
+                  <Link
+                    type="button"
+                    className="text-white bg-gradient-to-r to-emerald-600 from-sky-400  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    href="mailto:akintobiayodeji1@gmail.com"
+                    target="_blank"
+                  >
+                    <svg
+                      className="w-3.5 h-3.5 text-white me-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 16"
+                    >
+                      <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                      <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                    </svg>
+                    Mail
+                  </Link>
+                </motion.div>
               </div>
             </div>
             <div className='lg:block w-1/2 ml-10 flex justify-center text-center' >
