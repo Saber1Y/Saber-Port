@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <header
-      className="w-full px-32 py-8 font-medium md:flex md:items-center md:justify-between md:flex-row"
+      className="w-full px-20 py-8 font-medium md:flex md:items-center md:justify-between"
       id="Home"
     >
       <nav className="space-x-6 md:text-xl md:block hidden">
@@ -45,7 +45,7 @@ const Navbar = () => {
           <GithubIcon />
         </motion.a>
       </div>
-      <div className=" absolute left-[50%] top-2 translate-x-[-50%] ">
+      <div className="absolute left-[50%] md:left-[62%]  lg:left-[55%] top-2 md:top-4 translate-x-[-50%] ">
         <Logo />
       </div>
     </header>

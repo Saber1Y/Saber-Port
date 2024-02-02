@@ -22,7 +22,7 @@ const Footer = () => {
             Buy me Coffee ☕️
           </Link>
         </div>
-        <p className="cursor-pointer">
+        <p className="cursor-pointer blocks">
           Built By Saber{" "}
           <span className="text-2xl cursor-pointer">&#9825;</span>
         </p>
