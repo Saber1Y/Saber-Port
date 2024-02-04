@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { Footer, Navbar } from '../index'
 
 
+
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-mont'
