@@ -42,7 +42,7 @@ const about = () => {
                 <meta name="viewport" content="any"></meta>
             </Head>
             <main>
-                <AnimatedText text="Translating ideas into Execution." />
+                <AnimatedText text="Turn Ideas Into Reality." />
                 <div className='grid w-full grid-cols-8 gap-10 mt-5'>
                     <div className='col-span-3 flex flex-col items-start justify-start ml-6'>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark'>Biography</h2>
@@ -95,7 +95,6 @@ const about = () => {
                             <h2 className='text-xl font-medium capitalize text-dark/75'>Year's Of Exprience</h2>
                         </div>
                     </div>
-
                 </div>
                 <Skills />
                 <Exprience />
