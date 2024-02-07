@@ -6,7 +6,7 @@ const Skills = () => {
       <h2 className="font-bold text-4xl mt-24 w-full text-center lg:text-8xl">
         Skills
       </h2>
-      <p className="text-3xl font-bold text-center">Languages & Tech Stack </p>
+      <p className="text-3xl font-bold text-center">Languages & Tech Stack: </p>
       <div className="w-full mt-10 flex items-center justify-center rounded-full space-x-5">
         <svg viewBox="0 0 128 128" width="50" height="50">
           <path

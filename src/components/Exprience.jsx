@@ -10,7 +10,7 @@ const Exprience = () => {
   });
   return (
 
-    <div className="mt-10 text-center">
+    <div className="my-10 text-center">
       <h1 className="text-4xl text-dark font-bold capitalize  lg:text-7xl">
         Exprience
       </h1>
