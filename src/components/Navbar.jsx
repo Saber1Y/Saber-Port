@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav className="space-x-6 md:text-xl md:block hidden">
         <CustomLink href="./" title="Home" />
         <CustomLink href="./about" title="About" />
-        <CustomLink href="./Contact" title="Contact" />
+        <CustomLink href="./contact" title="Contact" />
         <CustomLink href="./" title="Projects" />
       </nav>
       <div className="md:flex md:items-center md:justify-center md:flex-wrap md:space-x-3 hidden">
