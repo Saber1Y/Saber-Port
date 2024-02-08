@@ -1,5 +1,8 @@
 import React from "react";
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import { FaHouseChimney } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 import Head from "next/head";
 
 const Contact = () => {
@@ -13,6 +16,11 @@ const Contact = () => {
                 <div className="flex flex-col w-1/2">
                     <h1>Get in touch</h1>
                     <p className="w-full">Feel free to reach out to me for any inquiries, collaborations, or questions you may have. Whether you're interested in working together, have feedback to share, or just want to say hello, I'd love to hear from you. Your messages are important to me, and I'll do my best to respond promptly. Let's connect and start a conversation!</p>
+                    <div>
+                        <span><FaHouseChimney /></span>
+                        <span><FaPhoneAlt /></span>
+                        <span><IoMdMail /></span>
+                    </div>
                 </div>
                 <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8 w-1/2">
                     <div
@@ -32,6 +40,7 @@ const Contact = () => {
                         <p className="mt-2 text-lg leading-8 text-gray-600">
                             Feel free to reach out to me using the form below.
                         </p>
+
                     </div>
                     <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
