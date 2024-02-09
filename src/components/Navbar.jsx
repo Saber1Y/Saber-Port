@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
+import { GiHamburgerMenu } from 'react-icons/gi'
 import { Logo, CustomLink } from "../index";
 import { GithubIcon, LinkedInIcon, XIcon } from "./icons";
 import { motion } from "framer-motion";
@@ -16,6 +17,9 @@ const Navbar = () => {
         <CustomLink href="./contact" title="Contact" />
         <CustomLink href="./projects" title="Projects" />
       </nav>
+      <div>
+
+      </div>
       <div className="md:flex md:items-center md:justify-center md:flex-wrap md:space-x-3 hidden">
         <motion.a
           href=""

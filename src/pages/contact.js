@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { FaHouseChimney } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -6,6 +6,9 @@ import { IoMdMail } from "react-icons/io";
 import Head from "next/head";
 
 const contact = () => {
+
+    const {toggle, setToggle} = useState(false);
+
     return (
         <>
             <Head>
