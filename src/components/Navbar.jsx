@@ -1,25 +1,53 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import { GiHamburgerMenu } from 'react-icons/gi'
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdClose } from "react-icons/md";
 import { Logo, CustomLink } from "../index";
 import { GithubIcon, LinkedInIcon, XIcon } from "./icons";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
+
   return (
     <header
       className="w-full px-20 py-8 font-medium md:flex md:items-center md:justify-between"
       id="Home"
     >
+      {/* Menu for small screens */}
+      <div className="md:hidden">
+        <GiHamburgerMenu
+          
+          fontSize={27}
+          className="block"
+          onClick={() => setToggle(true)}
+        />
+        {toggle && (
+          <div>
+            <MdClose
+              
+              fontSize={27}
+              onClick={() => setToggle(false)}
+            />
+            <ul>
+              <CustomLink href="./" title="Home" />
+              <CustomLink href="./about" title="About" />
+              <CustomLink href="./contact" title="Contact" />
+              <CustomLink href="./projects" title="Projects" />
+            </ul>
+          </div>
+        )}
+      </div>
+
+      {/* Main navigation for medium and larger screens */}
       <nav className="space-x-6 md:text-xl md:block hidden">
         <CustomLink href="./" title="Home" />
         <CustomLink href="./about" title="About" />
         <CustomLink href="./contact" title="Contact" />
         <CustomLink href="./projects" title="Projects" />
       </nav>
-      <div>
 
-      </div>
+      {/* Social icons */}
       <div className="md:flex md:items-center md:justify-center md:flex-wrap md:space-x-3 hidden">
         <motion.a
           href=""
@@ -49,7 +77,9 @@ const Navbar = () => {
           <GithubIcon />
         </motion.a>
       </div>
-      <div className="absolute left-[50%] md:left-[62%]  lg:left-[55%] top-2 md:top-4 translate-x-[-50%] ">
+
+      {/* Logo */}
+      <div className="absolute left-[50%] md:left-[62%] lg:left-[55%] top-2 md:top-4 translate-x-[-50%] ">
         <Logo />
       </div>
     </header>

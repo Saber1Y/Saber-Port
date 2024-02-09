@@ -7,8 +7,6 @@ import Head from "next/head";
 
 const contact = () => {
 
-    const {toggle, setToggle} = useState(false);
-
     return (
         <>
             <Head>
