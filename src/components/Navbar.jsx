@@ -12,11 +12,21 @@ const Navbar = () => {
   const [mode, setMode] = useDarkTheme();
   const [toggle, setToggle] = useState(false);
 
+  const handleClick = () => {
+
+  }
+
   return (
     <header
       className="w-full px-20 py-8 font-medium md:flex md:items-center md:justify-between"
       id="Home"
     >
+      <button>
+        <span className="bg-dark block h-0.5 w-6 rounded-sm -translate-y-0.5"></span>
+        <span className="bg-dark block h-0.5 w-6 rounded-sm my-0.5"></span>
+        <span className="bg-dark block h-0.5 w-6 rounded-sm translate-y-0.5"></span>
+      </button>
+
       <nav className="space-x-6 md:text-xl md:block hidden">
         <CustomLink href="./" title="Home" />
         <CustomLink href="./about" title="About" />
@@ -51,7 +61,6 @@ const Navbar = () => {
         >
           <GithubIcon />
         </motion.a>
-
         <button onClick={() => setMode(mode === "light" ? "dark" : "light")}>
           {mode === "dark" ? (
             <SunIcon className={"text-dark"} />
@@ -64,7 +73,7 @@ const Navbar = () => {
       <div className="absolute left-[50%] md:left-[62%] lg:left-[55%] top-2 md:top-4 translate-x-[-50%] flex justify-evenly">
         <Logo />
 
-        <div className="md:hidden">
+        {/* <div className="md:hidden">
           <GiHamburgerMenu
             fontSize={27}
             className="block"
@@ -81,7 +90,7 @@ const Navbar = () => {
               </ul>
             </div>
           )}
-        </div>
+        </div> */}
       </div>
     </header>
   );
