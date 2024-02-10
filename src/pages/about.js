@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { Skills } from '../index'
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Exprience from '@/components/Exprience'
+import { motion } from 'framer-motion';
 
 
 const about = () => {

@@ -8,6 +8,7 @@ const Skills = () => {
       </h2>
       <p className="text-3xl font-bold text-center">Languages & Tech Stack: </p>
       <div className="w-full mt-10 flex items-center justify-center rounded-full space-x-5">
+        
         <svg viewBox="0 0 128 128" width="50" height="50">
           <path
             fill="#E44D26"
@@ -122,6 +123,7 @@ const Skills = () => {
           <path d="M78.6 73.3l7.5 11.3V41.8h-7.5z"></path>
         </svg>
       </div>
+
     </>
   );
 };

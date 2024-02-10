@@ -5,8 +5,11 @@ import { MdClose } from "react-icons/md";
 import { Logo, CustomLink } from "../index";
 import { GithubIcon, LinkedInIcon, XIcon } from "./icons";
 import { motion } from "framer-motion";
+import useDarkTheme from "./hooks/useDarkTheme";
+import { MoonIcon, SunIcon } from "@heroicons/react/20/solid";
 
 const Navbar = () => {
+  const [mode, setMode] = useDarkTheme();
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -48,7 +51,16 @@ const Navbar = () => {
         >
           <GithubIcon />
         </motion.a>
+
+        <button onClick={() => setMode(mode === "light" ? "dark" : "light")}>
+          {mode === "dark" ? (
+            <SunIcon className={"text-dark"} />
+          ) : (
+            <MoonIcon className={"text-dark"} />
+          )}
+        </button>
       </div>
+
       <div className="absolute left-[50%] md:left-[62%] lg:left-[55%] top-2 md:top-4 translate-x-[-50%] flex justify-evenly">
         <Logo />
 
