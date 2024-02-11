@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { Skills } from '../index'
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Exprience from '@/components/Exprience'
-import { motion } from 'framer-motion';
+
 
 
 const about = () => {
@@ -40,10 +40,10 @@ const about = () => {
         <>
             <Head>
                 <title>Saber | About Page</title>
-                <meta name="viewport" content="any"></meta>
+                {/* <meta name="viewport" content="any"></meta>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Kanit:ital,wght@1,500&family=Lato:ital,wght@1,900&family=Noto+Sans+Mahajani&family=Rubik:ital,wght@1,700&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Kanit:ital,wght@1,500&family=Lato:ital,wght@1,900&family=Noto+Sans+Mahajani&family=Rubik:ital,wght@1,700&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet" /> */}
             </Head>
             <main>
                 <AnimatedText text="Turn Ideas Into Reality." />

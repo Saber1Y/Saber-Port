@@ -110,14 +110,14 @@ const Navbar = () => {
       </div>
 
       {/* mobile */}
-      <div className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden">
-        <nav className="space-x-6 md:text-xl">
+      <div className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden  bg-yellow-400 rounded-lg py-10 bg-transparent">
+        <nav className="flex flex-col md:text-xl">
           <CustomLink href="./" title="Home" />
           <CustomLink href="./about" title="About" />
           <CustomLink href="./contact" title="Contact" />
           <CustomLink href="./projects" title="Projects" />
         </nav>
-        <div className="md:flex md:items-center md:justify-center md:flex-wrap md:space-x-3">
+        <div className="flex flex-row items-center justify-center space-x-3 mt-3">
           <motion.a
             href=""
             target={"_blank"}
