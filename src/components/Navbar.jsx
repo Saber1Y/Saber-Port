@@ -13,64 +13,142 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleClick = () => {
-
-  }
+    setToggle(!toggle);
+  };
 
   return (
     <header
-      className="w-full px-20 py-8 font-medium md:flex md:items-center md:justify-between"
+      className="w-full px-20 py-8 font-medium md:flex md:items-center md:justify-between relative"
       id="Home"
     >
-      <button>
-        <span className="bg-dark block h-0.5 w-6 rounded-sm -translate-y-0.5"></span>
-        <span className="bg-dark block h-0.5 w-6 rounded-sm my-0.5"></span>
-        <span className="bg-dark block h-0.5 w-6 rounded-sm translate-y-0.5"></span>
+      <button
+        className="flex flex-col justify-center items-center md:hidden"
+        onClick={handleClick}
+      >
+        <span
+          className={`bg-dark block transition-all duration-200 ease-in-out h-0.5 w-6 rounded-sm ${
+            toggle ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+          }`}
+        ></span>
+        <span
+          className={`bg-dark block transition-all duration-200 ease-in-out h-0.5 w-6 rounded-sm my-0.5 ${
+            toggle ? "opacity-0" : "opacity-100"
+          }`}
+        ></span>
+        <span
+          className={`bg-dark block transition-all duration-200 ease-in-out h-0.5 w-6 rounded-sm ${
+            toggle ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+          }`}
+        ></span>
       </button>
 
-      <nav className="space-x-6 md:text-xl md:block hidden">
-        <CustomLink href="./" title="Home" />
-        <CustomLink href="./about" title="About" />
-        <CustomLink href="./contact" title="Contact" />
-        <CustomLink href="./projects" title="Projects" />
-      </nav>
-      <div className="md:flex md:items-center md:justify-center md:flex-wrap md:space-x-3 hidden">
-        <motion.a
-          href=""
-          target={"_blank"}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.8 }}
-          className="w-6"
-        >
-          <XIcon />
-        </motion.a>
-        <motion.a
-          href=""
-          target={"_blank"}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.8 }}
-          className="w-6"
-        >
-          <LinkedInIcon />
-        </motion.a>
-        <motion.a
-          href=""
-          target={"_blank"}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.8 }}
-          className="w-6"
-        >
-          <GithubIcon />
-        </motion.a>
-        <button onClick={() => setMode(mode === "light" ? "dark" : "light")}>
-          {mode === "dark" ? (
-            <SunIcon className={"text-dark"} />
-          ) : (
-            <MoonIcon className={"text-dark"} />
-          )}
-        </button>
+      <div className="w-full md:flex md:justify-between md:items-center hidden">
+        <nav className="space-x-6 md:text-xl">
+          <CustomLink href="./" title="Home" />
+          <CustomLink href="./about" title="About" />
+          <CustomLink href="./contact" title="Contact" />
+          <CustomLink href="./projects" title="Projects" />
+        </nav>
+        <div className="md:flex md:items-center md:justify-center md:flex-wrap md:space-x-3">
+          <motion.a
+            href=""
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.8 }}
+            className="w-6"
+          >
+            <XIcon />
+          </motion.a>
+          <motion.a
+            href=""
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.8 }}
+            className="w-6"
+          >
+            <LinkedInIcon />
+          </motion.a>
+          <motion.a
+            href=""
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.8 }}
+            className="w-6"
+          >
+            <GithubIcon />
+          </motion.a>
+
+          <button
+            className="flex flex-col justify-center items-center md:hidden"
+            onClick={handleClick}
+          >
+            <span
+              className={`bg-dark block transition-all duration-200 ease-in-out h-0.5 w-6 rounded-sm ${
+                toggle ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+              }`}
+            ></span>
+            <span
+              className={`bg-dark block transition-all duration-200 ease-in-out h-0.5 w-6 rounded-sm my-0.5 ${
+                toggle ? "opacity-0" : "opacity-100"
+              }`}
+            ></span>
+            <span
+              className={`bg-dark block transition-all duration-200 ease-in-out h-0.5 w-6 rounded-sm ${
+                toggle ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+              }`}
+            ></span>
+          </button>
+
+          <button onClick={() => setMode(mode === "light" ? "dark" : "light")}>
+            {mode === "dark" ? (
+              <SunIcon className={"text-dark"} />
+            ) : (
+              <MoonIcon className={"text-dark"} />
+            )}
+          </button>
+        </div>
       </div>
 
-      <div className="absolute left-[50%] md:left-[62%] lg:left-[55%] top-2 md:top-4 translate-x-[-50%] flex justify-evenly">
+      {/* mobile */}
+      <div className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden">
+        <nav className="space-x-6 md:text-xl">
+          <CustomLink href="./" title="Home" />
+          <CustomLink href="./about" title="About" />
+          <CustomLink href="./contact" title="Contact" />
+          <CustomLink href="./projects" title="Projects" />
+        </nav>
+        <div className="md:flex md:items-center md:justify-center md:flex-wrap md:space-x-3">
+          <motion.a
+            href=""
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.8 }}
+            className="w-6"
+          >
+            <XIcon />
+          </motion.a>
+          <motion.a
+            href=""
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.8 }}
+            className="w-6"
+          >
+            <LinkedInIcon />
+          </motion.a>
+          <motion.a
+            href=""
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.8 }}
+            className="w-6"
+          >
+            <GithubIcon />
+          </motion.a>
+        </div>
+      </div>
+
+      <div className="absolute left-[50%] md:left-[62%] lg:left-[55%] top-3 md:top-4 translate-x-[-50%] flex justify-evenly">
         <Logo />
 
         {/* <div className="md:hidden">
