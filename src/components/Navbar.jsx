@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
-import { Logo, CustomLink } from "../index";
+import { Logo, CustomLink, CustomMobileLink } from "../index";
 import { GithubIcon, LinkedInIcon, XIcon } from "./icons";
 import { motion } from "framer-motion";
 import useDarkTheme from "./hooks/useDarkTheme";
@@ -110,12 +110,12 @@ const Navbar = () => {
       </div>
 
       {/* mobile */}
-      <div className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden  bg-yellow-400 rounded-lg py-10 bg-transparent">
+     { toggle ?       <div className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden  bg-yellow-400 rounded-lg py-10 bg-transparent">
         <nav className="flex flex-col md:text-xl">
-          <CustomLink href="./" title="Home" />
-          <CustomLink href="./about" title="About" />
-          <CustomLink href="./contact" title="Contact" />
-          <CustomLink href="./projects" title="Projects" />
+          <CustomMobileLink href="./" title="Home"  toggle={handleClick} />
+          <CustomMobileLink href="./about" title="About" toggle={handleClick} />
+          <CustomMobileLink href="./contact" title="Contact" toggle={handleClick} />
+          <CustomMobileLink href="./projects" title="Projects" toggle={handleClick} />
         </nav>
         <div className="flex flex-row items-center justify-center space-x-3 mt-3">
           <motion.a
@@ -146,7 +146,7 @@ const Navbar = () => {
             <GithubIcon />
           </motion.a>
         </div>
-      </div>
+      </div> : null }
 
       <div className="absolute left-[50%] md:left-[62%] lg:left-[55%] top-3 md:top-4 translate-x-[-50%] flex justify-evenly">
         <Logo />
