@@ -110,43 +110,58 @@ const Navbar = () => {
       </div>
 
       {/* mobile */}
-     { toggle ?       <div className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden  bg-yellow-400 rounded-lg py-10 bg-transparent">
-        <nav className="flex flex-col md:text-xl">
-          <CustomMobileLink href="./" title="Home"  toggle={handleClick} />
-          <CustomMobileLink href="./about" title="About" toggle={handleClick} />
-          <CustomMobileLink href="./contact" title="Contact" toggle={handleClick} />
-          <CustomMobileLink href="./projects" title="Projects" toggle={handleClick} />
-        </nav>
-        <div className="flex flex-row items-center justify-center space-x-3 mt-3">
-          <motion.a
-            href=""
-            target={"_blank"}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.8 }}
-            className="w-6"
-          >
-            <XIcon />
-          </motion.a>
-          <motion.a
-            href=""
-            target={"_blank"}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.8 }}
-            className="w-6"
-          >
-            <LinkedInIcon />
-          </motion.a>
-          <motion.a
-            href=""
-            target={"_blank"}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.8 }}
-            className="w-6"
-          >
-            <GithubIcon />
-          </motion.a>
+
+      {toggle ? (
+        <div className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden  bg-yellow-400 rounded-lg py-10 bg-transparent">
+          <nav className="flex flex-col md:text-xl">
+            <CustomMobileLink href="./" title="Home" toggle={handleClick} />
+            <CustomMobileLink
+              href="./about"
+              title="About"
+              toggle={handleClick}
+            />
+            <CustomMobileLink
+              href="./contact"
+              title="Contact"
+              toggle={handleClick}
+            />
+            <CustomMobileLink
+              href="./projects"
+              title="Projects"
+              toggle={handleClick}
+            />
+          </nav>
+          <div className="flex flex-row items-center justify-center space-x-3 mt-3">
+            <motion.a
+              href=""
+              target={"_blank"}
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.8 }}
+              className="w-6"
+            >
+              <XIcon />
+            </motion.a>
+            <motion.a
+              href=""
+              target={"_blank"}
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.8 }}
+              className="w-6"
+            >
+              <LinkedInIcon />
+            </motion.a>
+            <motion.a
+              href=""
+              target={"_blank"}
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.8 }}
+              className="w-6"
+            >
+              <GithubIcon />
+            </motion.a>
+          </div>
         </div>
-      </div> : null }
+      ) : null}
 
       <div className="absolute left-[50%] md:left-[62%] lg:left-[55%] top-3 md:top-4 translate-x-[-50%] flex justify-evenly">
         <Logo />
