@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { Logo, CustomLink, CustomMobileLink } from "../index";
@@ -9,6 +10,50 @@ import useDarkTheme from "./hooks/useDarkTheme";
 import { MoonIcon, SunIcon } from "@heroicons/react/20/solid";
 
 const Navbar = () => {
+  
+  const CustomLink = ({ href, title, className = "" }) => {
+    const router = useRouter();
+
+    return (
+      <Link href={href} className={`${className} relative pb-2 group`}>
+        {title}
+        <span
+          className={`h-[3px] inline-block  bg-dark absolute bottom-0  left-0 group-hover:w-full transition-[width] ease-in duration-300 ${
+            router.asPath === href ? "w-full" : "w-0"
+          }`}
+        >
+          &nbsp;
+        </span>
+      </Link>
+    );
+  };
+
+  const CustomMobileLink = ({ href, title, className = "", toggle }) => {
+    toggle();
+    const router = useRouter();
+
+    const handleClick = () => {
+      router.push(href);
+    };
+
+    return (
+      <button
+        href={href}
+        className={`${className} relative pb-2 group`}
+        onClick={handleClick}
+      >
+        {title}
+        <span
+          className={`h-[3px] inline-block  bg-dark absolute bottom-0  left-0 group-hover:w-full transition-[width] ease-in duration-300 ${
+            router.asPath === href ? "w-full" : "w-0"
+          }`}
+        >
+          &nbsp;
+        </span>
+      </button>
+    );
+  };
+
   const [mode, setMode] = useDarkTheme();
   const [toggle, setToggle] = useState(false);
 

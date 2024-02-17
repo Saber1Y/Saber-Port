@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Transition from '@/components/Transition'
 import { Hero, Hire } from '../index'
 import Saber from '../../public/images/profile/Saber.png'
 import { TypeAnimation } from 'react-type-animation';
@@ -45,6 +46,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Kanit:ital,wght@1,500&family=Lato:ital,wght@1,900&family=Noto+Sans+Mahajani&family=Rubik:ital,wght@1,700&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet" />
       </Head>
+      <Transition />
       <main className='flex items-center text-dark w-full min-h-screen'>
         <motion.div className='w-full h-full inline-block z-0 bg-light p-8 lg:p-32 pt-0' variants={singleWord} initial="initial" animate="animate">
           <div className='md:flex md:items-center md:justify-between  w-full'>
