@@ -1,7 +1,9 @@
-import '@/styles/globals.css'
-import { Montserrat } from 'next/font/google'
-import Head from 'next/head'
-import { Footer, Navbar } from '../index'
+import '@/styles/globals.css';
+import { Montserrat } from 'next/font/google';
+import Head from 'next/head';
+import { Footer, Navbar } from '../index';
+import { AnimatePresence } from 'framer-motion';
+import { useRouter } from "next/router";
 
 
 
@@ -11,6 +13,9 @@ const montserrat = Montserrat({
 })
 
 export default function App({ Component, pageProps }) {
+
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -19,7 +24,9 @@ export default function App({ Component, pageProps }) {
       </Head>
       <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen text-dark`}>
         <Navbar />
-        <Component {...pageProps} />
+        <AnimatePresence mode='wait'>
+          <Component key={router.asPath}  {...pageProps} />
+        </AnimatePresence>
         <Footer />
       </main>
     </>
