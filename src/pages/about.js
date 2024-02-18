@@ -41,10 +41,10 @@ const about = () => {
         <>
             <Head>
                 <title>Saber | About Page</title>
-                {/* <meta name="viewport" content="any"></meta>
+                <meta name="viewport" content="any"></meta>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Kanit:ital,wght@1,500&family=Lato:ital,wght@1,900&family=Noto+Sans+Mahajani&family=Rubik:ital,wght@1,700&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet" /> */}
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Kanit:ital,wght@1,500&family=Lato:ital,wght@1,900&family=Noto+Sans+Mahajani&family=Rubik:ital,wght@1,700&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet" />
             </Head>
             <Transition />
             <main>
@@ -79,26 +79,26 @@ const about = () => {
                             challenges to deliver meaningful and impactful solutions.</p>
                     </div>
                     <div className='relative col-span-3 h-max rounded-2xl border-dark border-solid border-2 bg-light p-8'>
-                        <div className='absolute top-0 -right-5 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' />
-                        <img src='/Images/techsaber.png' className='w-auto h-auto bg-dark' alt='saber' />
+                        <div className='absolute top-0 -right-5 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-dark' />
+                        <img src='/Images/techsaber.png' className='w-auto h-auto bg-dark ' alt='saber' />
                     </div>
 
                     <div className='flex flex-col space-y-0 items-center justify-evenly'>
                         <div className='flex flex-col items-end justify-center'>
                             <span className=' font-bold text-4xl lg:text-7xl'>
-                                <Animatedtxt value="50" />+
+                                <Animatedtxt value="50" />0+
                             </span>
-                            <h2 className='text-xl font-medium capitalize text-dark/75'>Satisfied Client</h2>
+                            <h2 className='text-xl font-medium capitalize text-dark/75  text-center'>Satisfied Client</h2>
                         </div>
 
                         <div className='flex flex-col items-end justify-center'>
                             <span className=' font-bold text-4xl lg:text-7xl'>15+</span>
-                            <h2 className='text-xl font-medium capitalize text-dark/75'>Completed Projects</h2>
+                            <h2 className='text-xl font-medium capitalize text-dark/75 text-center'>Completed Projects</h2>
                         </div>
 
                         <div className='flex flex-col items-end justify-center'>
                             <span className=' font-bold text-4xl lg:text-7xl'>1+</span>
-                            <h2 className='text-xl font-medium capitalize text-dark/75'>Year's Of Exprience</h2>
+                            <h2 className='text-xl font-medium capitalize text-dark/75 text-center '>Year's Of Exprience</h2>
                         </div>
                     </div>
                 </div>

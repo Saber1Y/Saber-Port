@@ -5,6 +5,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import Head from "next/head";
 import Transition from "@/components/Transition";
+import AnimatedText from "@/components/AnimatedText";
 
 const contact = () => {
 
@@ -18,6 +19,7 @@ const contact = () => {
                 {/* <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Kanit:ital,wght@1,500&family=Lato:ital,wght@1,900&family=Noto+Sans+Mahajani&family=Rubik:ital,wght@1,700&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet" /> */}
             </Head>
             <Transition />
+            <AnimatedText text="Turn Ideas Into Reality." />
             <section className="flex justify-evenly">
                 <div className="flex flex-col w-1/2 mx-10 mt-20">
                     <h1 className="text-4xl font-bold">Get in touch</h1>

@@ -20,7 +20,7 @@ const AnimatedText = ({ text, className }) => {
      
 
   return (
-    <motion.div className={`${className} text-3xl  font-extrabold text-dark flex items-center justify-center py-6 lg:text-5xl`} variants={MoreWord} initial="initial" animate="animate">
+    <motion.div className={`${className} text-3xl  font-extrabold text-dark flex items-center justify-center py-8 lg:text-5xl`} variants={MoreWord} initial="initial" animate="animate">
         <h1>{text}</h1>
     </motion.div>
   )
