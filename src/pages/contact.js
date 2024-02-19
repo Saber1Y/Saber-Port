@@ -6,6 +6,7 @@ import { IoMdMail } from "react-icons/io";
 import Head from "next/head";
 import Transition from "@/components/Transition";
 import AnimatedText from "@/components/AnimatedText";
+import Link from "next/link";
 
 const contact = () => {
 
@@ -27,7 +28,7 @@ const contact = () => {
                     <div className="flex flex-col items-start mt-5 cursor-pointer">
                         <div className="flex items-center mb-2">
                             <FaHouseChimney className="mr-2" />
-                            <span>6b Lagos, Nigeria</span>
+                            <span>Lagos-State, Nigeria</span>
                         </div>
                         <div className="flex items-center mb-2">
                             <FaPhoneAlt className="mr-2" />
@@ -35,7 +36,7 @@ const contact = () => {
                         </div>
                         <div className="flex items-center">
                             <IoMdMail className="mr-2" />
-                            <span>ayodejiakintobi1@gmail.com</span>
+                            <Link href="mailto:ayodejjiakintobi1@gmail.com">ayodejiakintobi1@gmail.com</Link>
                         </div>
                     </div>
                 </div>
@@ -110,15 +111,10 @@ const contact = () => {
                                             <option>EU</option>
                                             <option>NG</option>
                                         </select>
-                                        <ChevronDownIcon
-                                            className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
-                                            aria-hidden="true"
-                                        />
                                     </div>
                                     <input
                                         type="tel"
                                         name="phone-number"
-                                        id="phone-number"
                                         autoComplete="tel"
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to-tr focus:from-[#ff80b5] focus:to-[#9089fc] sm:text-sm sm:leading-6"
                                     />
@@ -131,7 +127,7 @@ const contact = () => {
                                 <div className="mt-2.5">
                                     <textarea
                                         name="message"
-                                        id="message"
+
                                         rows={4}
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to-tr focus:from-[#ff80b5] focus:to-[#9089fc] sm:text-sm sm:leading-6"
                                         defaultValue={''}

@@ -56,8 +56,8 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <header
-      className="w-full px-20 py-8 font-medium md:flex md:items-center md:justify-between relative"
+    <nav
+      className="w-full px-20 py-8 flex font-medium md:flex md:justify-evenly relative"
       id="Home"
     >
       <div className="w-full md:flex md:justify-between md:items-center hidden">
@@ -83,13 +83,13 @@ const Navbar = () => {
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.8 }}
-            // className="w-6"
+            className="w-6"
           >
             <LinkedInIcon />
           </motion.a>
 
           <motion.a
-            href="github.com/saber1Y"
+            href="https://www.github.com/saber1Y"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.8 }}
@@ -110,7 +110,7 @@ const Navbar = () => {
 
       {/* mobile */}
 
-      <div className="md:hidden block">
+      <div className="md:hidden block ">
         <button onClick={() => setToggleMenu(!toggleMenu)}>
           {" "}
           <span
@@ -138,10 +138,10 @@ const Navbar = () => {
           </nav>
         )}
       </div>
-      <div className="absolute left-[50%] md:left-[62%] lg:left-[55%] top-3 md:top-4 translate-x-[-50%] flex justify-evenly">
-        <Logo />
+      <div className="absolute top-1 left-[40%] py-3  md:left-[62%] lg:left-[55%] md:top-4">
+          <Logo />
       </div>
-    </header>
+    </nav>
   );
 };
 

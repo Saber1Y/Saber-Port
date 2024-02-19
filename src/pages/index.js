@@ -29,7 +29,7 @@ export default function Home() {
               <p className="font-extrabold  text-3xl pt-3 leading-8 tracking-tight font-mono no-underline sm:text-2xl md:text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
                 <TypeAnimation
                   sequence={[
-                    'A Passionate Full Stack Web3 Engineer',
+                    'A Full Stack Web3 Engineer',
                     1000,
                     'A Community Manager',
                     1000,
@@ -98,7 +98,7 @@ export default function Home() {
               </div>
             </div>
             <div className='lg:block w-1/2 ml-10 flex justify-center text-center' >
-              <Image src={Saber} alt='Saber' className='w-96 max-w-screen-md h-full ml-10 ' />
+              <Image src={Saber} alt='Saber' className='w-96 max-w-screen-md h-full ml-10' />
             </div>
           </div>
         </div>
