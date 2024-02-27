@@ -2,6 +2,7 @@ import AnimatedText from '@/components/AnimatedText'
 import Transition from '@/components/Transition'
 import Head from 'next/head'
 import React from 'react'
+import { FeaturedProject } from '../index'
 
 const projects = () => {
     return (
@@ -16,6 +17,11 @@ const projects = () => {
             <Transition />
         <section className='w-full mb-14 flex flex-col items-center justify-center'>
             <AnimatedText text="Crafting Tommorow's Solution" />
+
+         <div className='grid grid-col-12 gap-6'>
+            {/* <FeaturedProject /> */}
+         </div>
+
         </section>
         </>
     )
