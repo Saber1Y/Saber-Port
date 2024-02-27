@@ -3,6 +3,7 @@ import Transition from '@/components/Transition'
 import Head from 'next/head'
 import React from 'react'
 import { FeaturedProject } from '../index'
+import dappazon1 from '../../public/images/project/dappazon.png'
 
 const projects = () => {
     return (
@@ -15,14 +16,42 @@ const projects = () => {
                 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Kanit:ital,wght@1,500&family=Lato:ital,wght@1,900&family=Noto+Sans+Mahajani&family=Rubik:ital,wght@1,700&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet" />
             </Head>
             <Transition />
-        <section className='w-full mb-14 flex flex-col items-center justify-center'>
-            <AnimatedText text="Crafting Tommorow's Solution" />
+            <section className='w-full mb-14 flex flex-col items-center justify-center'>
+                <AnimatedText text="Crafting Tommorow's Solution" />
 
-         <div className='grid grid-col-12 gap-6'>
-            {/* <FeaturedProject /> */}
-         </div>
+                <div className='grid grid-col-12 gap-6'>
+                    <div className='col-span-12'>
+                        FeaturedProject
+                        {/* <FeaturedProject
+                            img={dappazon1}
+                            title="Dappazon"
+                            summary="Decentralized Version of Amazon"
+                            github="github.com/saber1y/dappazon"
 
-        </section>
+                        /> */}
+                    </div>
+
+                    <div className='col-span-6'>
+                        project-1
+                    </div>
+                    <div className='col-span-6'>
+                        project-2
+                    </div>
+
+                    <div className='col-span-12'>
+                        FeaturedProject
+                    </div>
+
+                    <div className='col-span-6'>
+                        project-3
+                    </div>
+                    <div className='col-span-6'>
+                        project-4
+                    </div>
+
+                </div>
+
+            </section>
         </>
     )
 }

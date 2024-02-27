@@ -3,7 +3,7 @@ import Link from "next/link";
 import { GithubIcon } from "./icons";
 import Image from "next/image";
 
-const FeaturedProject = ({ summary, type, title, img, github, link }) => {
+const FeaturedProject = ({ summary, title, img, github, link }) => {
   return (
     <article className="w-full">
       <Link href={link}>
@@ -11,7 +11,6 @@ const FeaturedProject = ({ summary, type, title, img, github, link }) => {
       </Link>
 
       <div>
-        <span>{type}</span>
         <Link href={link} target="_blank">
           <h2>{title}</h2>
         </Link>
