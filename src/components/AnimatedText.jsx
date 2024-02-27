@@ -7,13 +7,13 @@ const AnimatedText = ({ text, className }) => {
     const MoreWord = {
         initial: {
           opacity: 1,
-          y: 50,
+          y: 70,
         },
         animate: {
           opacity: 1,
           y: 0,
           transition: {
-            duration: 1
+            duration: 1.5
           },
         },
       }
