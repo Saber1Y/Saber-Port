@@ -40,18 +40,40 @@ const projects = () => {
                             link="/" />
                     </div>
                     <div className='col-span-6'>
-                        project-2
+                        <Project img={dappazon1}
+                            title="Dappazon"
+                            summary="Decentralized Version of Amazon, built with React(CRA), VanillaCss for styling and for 
+                            Solidity, Hardhat,ethers.js all for backend functionality "
+                            github="github.com/saber1y/dappazon"
+                            link="/" />
                     </div>
 
                     <div className='col-span-12'>
-                        FeaturedProject
+                        <FeaturedProject
+                            img={dappazon1}
+                            title="Dappazon"
+                            summary="Decentralized Version of Amazon, built with React(CRA), VanillaCss for styling and for 
+                            Solidity, Hardhat,ethers.js all for backend functionality "
+                            github="github.com/saber1y/dappazon"
+                            link="/"
+                        />
                     </div>
 
                     <div className='col-span-6'>
-                        project-3
+                        <Project img={dappazon1}
+                            title="Dappazon"
+                            summary="Decentralized Version of Amazon, built with React(CRA), VanillaCss for styling and for 
+                            Solidity, Hardhat,ethers.js all for backend functionality "
+                            github="github.com/saber1y/dappazon"
+                            link="/" />
                     </div>
                     <div className='col-span-6'>
-                        project-4
+                        <Project img={dappazon1}
+                            title="Dappazon"
+                            summary="Decentralized Version of Amazon, built with React(CRA), VanillaCss for styling and for 
+                            Solidity, Hardhat,ethers.js all for backend functionality "
+                            github="github.com/saber1y/dappazon"
+                            link="/" />
                     </div>
 
                 </div>
