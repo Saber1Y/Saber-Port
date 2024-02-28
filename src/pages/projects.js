@@ -3,7 +3,9 @@ import Transition from '@/components/Transition'
 import Head from 'next/head'
 import React from 'react'
 import { FeaturedProject, Project } from '../index'
-import dappazon1 from '../../public/images/project/dappazon.png'
+import dappazon1 from '../../public/images/project/dappazon.png';
+import starbucks from '../../public/images/project/starbucks.jpg';
+import Geritch from '../../public/images/project/Geritch.jpg';
 
 const projects = () => {
     return (
@@ -32,20 +34,18 @@ const projects = () => {
                     </div>
 
                     <div className='col-span-6'>
-                        <Project img={dappazon1}
-                            title="Dappazon"
-                            summary="Decentralized Version of Amazon, built with React(CRA), VanillaCss for styling and for 
-                            Solidity, Hardhat,ethers.js all for backend functionality "
+                        <Project img={starbucks}
+                            title="Starbucks Clone"
+                            summary="Starbucks cloned with Html, Css and Vanilla Css"
                             github="github.com/saber1y/dappazon"
-                            link="/" />
+                            link="https://star-bucks-clone-website-6xay.vercel.app" />
                     </div>
                     <div className='col-span-6'>
-                        <Project img={dappazon1}
-                            title="Dappazon"
-                            summary="Decentralized Version of Amazon, built with React(CRA), VanillaCss for styling and for 
-                            Solidity, Hardhat,ethers.js all for backend functionality "
+                        <Project img={Geritch}
+                            title="Geritch"                     
+                            summary="A demo fine dining website for Resutrants "
                             github="github.com/saber1y/dappazon"
-                            link="/" />
+                            link="https://restaurant-web-mu.vercel.apps" />
                     </div>
 
                     <div className='col-span-12'>

@@ -78,9 +78,9 @@ const about = () => {
                             believe in continuous learning, staying adaptable, and embracing new
                             challenges to deliver meaningful and impactful solutions.</p>
                     </div>
-                    <div className='relative col-span-3 h-max rounded-2xl border-dark border-solid border-2 bg-light p-8'>
-                        <div className='absolute top-0 -right-5 z-10 w-[102%] h-[102%] rounded-[2rem] bg-dark' />
-                        <img src='/Images/techsaber.png' className='w-auto h-auto bg-dark ' alt='saber' />
+                    <div className='relative col-span-3 h-auto rounded-2xl border-dark border-solid border-2 bg-light p-8 w-full'>
+                        <div className='absolute top-0 left-3 w-full h-full rounded-[2rem] bg-dark overflow-hidden -z-10' />
+                        <img src='/Images/techsaber.png' className='w-auto h-auto bg-dark' alt='saber' />
                     </div>
 
                     <div className='flex flex-col space-y-0 items-center justify-evenly'>

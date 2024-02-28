@@ -8,6 +8,7 @@ import Contact from "./pages/contact";
 import FeaturedProject from "./components/FeaturedProject";
 import Project from "./components/Project";
 
+
 export {
     Navbar,
     Logo,
@@ -17,5 +18,5 @@ export {
     Skills,
     Contact,
     FeaturedProject,
-    Project
+    Project,
 }
