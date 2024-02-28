@@ -3,19 +3,19 @@ import Link from "next/link";
 import { GithubIcon } from "./icons";
 import Image from "next/image";
 
-const FeaturedProject = ({ summary, title, img, github, link }) => {
+const Project = ({ title, img, link, github, summary }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-4xl p-10 cursor-pointer">
+    <article className="w-full flex flex-col items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-4xl p-6 relative cursor-pointer">
       <Link
         href={link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden ronded-lg hover-underline"
+        className="w-full cursor-pointer overflow-hidden ronded-lg"
       >
-        <Image src={img} alt="image" className="w-full h-auto" />
+        <Image src={img} alt="image" className="w-auto h-auto" />
       </Link>
 
-      <div className="w-1/2 flex-col items-start justify-between pl-5">
-        <h2 className="text-3xl font-semibold uppercase cursor-pointer">
+      <div className="w-full flex-col items-start justify-between pl-5 my-5">
+        <h2 className="text-3xl font-semibold uppercase cursor-pointer hover:underline">
           {title}
         </h2>
         <p>{summary}</p>
@@ -33,4 +33,4 @@ const FeaturedProject = ({ summary, title, img, github, link }) => {
   );
 };
 
-export default FeaturedProject;
+export default Project;

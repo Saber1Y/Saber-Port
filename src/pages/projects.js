@@ -2,7 +2,7 @@ import AnimatedText from '@/components/AnimatedText'
 import Transition from '@/components/Transition'
 import Head from 'next/head'
 import React from 'react'
-import { FeaturedProject } from '../index'
+import { FeaturedProject, Project } from '../index'
 import dappazon1 from '../../public/images/project/dappazon.png'
 
 const projects = () => {
@@ -19,20 +19,25 @@ const projects = () => {
             <section className='w-full mb-14 flex flex-col items-center justify-center'>
                 <AnimatedText text="Crafting Tommorow's Solution" />
 
-                <div className='grid grid-col-12 gap-6'>
+                <div className='grid grid-cols-12 gap-24'>
                     <div className='col-span-12'>
-                        FeaturedProject
-                        {/* <FeaturedProject
+                        <FeaturedProject
                             img={dappazon1}
                             title="Dappazon"
-                            summary="Decentralized Version of Amazon"
+                            summary="Decentralized Version of Amazon, built with React(CRA), VanillaCss for styling and for 
+                            Solidity, Hardhat,ethers.js all for backend functionality "
                             github="github.com/saber1y/dappazon"
-
-                        /> */}
+                            link="/"
+                        />
                     </div>
 
                     <div className='col-span-6'>
-                        project-1
+                        <Project img={dappazon1}
+                            title="Dappazon"
+                            summary="Decentralized Version of Amazon, built with React(CRA), VanillaCss for styling and for 
+                            Solidity, Hardhat,ethers.js all for backend functionality "
+                            github="github.com/saber1y/dappazon"
+                            link="/" />
                     </div>
                     <div className='col-span-6'>
                         project-2
