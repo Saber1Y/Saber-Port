@@ -79,7 +79,7 @@ const about = () => {
                             challenges to deliver meaningful and impactful solutions.</p>
                     </div>
                     <div className='relative col-span-3 h-max rounded-2xl border-dark border-solid border-2 bg-light p-8'>
-                        <div className='absolute top-0 -right-5 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-dark' />
+                        <div className='absolute top-0 -right-5 z-10 w-[102%] h-[102%] rounded-[2rem] bg-dark' />
                         <img src='/Images/techsaber.png' className='w-auto h-auto bg-dark ' alt='saber' />
                     </div>
 

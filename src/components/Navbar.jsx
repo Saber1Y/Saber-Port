@@ -25,38 +25,13 @@ const Navbar = () => {
     );
   };
 
-  const CustomMobileLink = ({ href, title, className = "", toggle }) => {
-    toggle();
-    const router = useRouter();
-
-    const handleClick = () => {
-      router.push(href);
-    };
-
-    return (
-      <button
-        href={href}
-        className={`${className} relative pb-2 group`}
-        onClick={handleClick}
-      >
-        {title}
-        <span
-          className={`h-[3px] inline-block  bg-dark absolute bottom-0  left-0 group-hover:w-full transition-[width] ease-in duration-300 ${
-            router.asPath === href ? "w-full" : "w-0"
-          }`}
-        >
-          &nbsp;
-        </span>
-      </button>
-    );
-  };
 
   const [mode, setMode] = useDarkTheme();
 
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <nav
+    <header
       className="w-full px-20 py-8 flex font-medium md:flex md:justify-evenly relative"
       id="Home"
     >
@@ -141,7 +116,7 @@ const Navbar = () => {
       <div className="absolute top-1 left-[40%] py-3  md:left-[62%] lg:left-[55%] md:top-4">
           <Logo />
       </div>
-    </nav>
+    </header>
   );
 };
 
