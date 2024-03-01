@@ -98,7 +98,7 @@ export default function Home() {
               </div>
             </div>
             <div className='lg:block w-1/2 ml-10 flex justify-center text-center' >
-              <Image src={Saber} alt='Saber' className='w-96 max-w-screen-md h-full ml-10' />
+              <Image src={Saber} alt='Saber' className='w-96 max-w-screen-md h-full ml-10' priority />
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ const MotionLink = motion(Link)
 
 const Logo = () => {
   return (
-<div className='flex items-center justify-center  space-x-4'>
+<div className='flex items-center justify-center space-x-4'>
   <MotionLink
     href="./"
     className='w-32 h-18 bg-dark text-light rounded-md text-2xl font-bold'
@@ -19,7 +19,7 @@ const Logo = () => {
       transition: { duration: 1, repeat: Infinity }
     }}
   >
-    <span className='flex items-center justify-center'>
+    <span className='flex items-center justify-center px-3'>
       <FaAngleLeft />
       SABER
       <FaAngleRight />
