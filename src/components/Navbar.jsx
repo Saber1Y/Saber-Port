@@ -113,11 +113,11 @@ const Navbar = () => {
           <>
             <nav className="md:text-xl flex flex-col items-center space-y-4 mt-5 border border-black rounded-sm ">
               <CustomLink href="./" title="Home" />
-              {/* <CustomLink href="./about" title="About" />
+              <CustomLink href="./about" title="About" />
               <CustomLink href="./contact" title="Contact" />
-              <CustomLink href="./projects" title="Projects" /> */}
+              <CustomLink href="./projects" title="Projects" />
 
-              {/* <div className="flex space-x-4">
+              <div className="flex space-x-4">
                 <motion.a
                   href="https://twitter.com/saberyt18_yt"
                   target={"_blank"}
@@ -147,7 +147,7 @@ const Navbar = () => {
                 >
                   <GithubIcon />
                 </motion.a>
-              </div> */}
+              </div>
             </nav>
           </>
         )}

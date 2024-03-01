@@ -30,7 +30,7 @@ const projects = () => {
                             title="Dappazon"
                             summary="Decentralized Version of Amazon, built with React (CRA) and Vanilla CSS for styling on the frontend. On the backend, it utilizes Solidity for smart contract development, Hardhat for Ethereum development environment setup, and ethers.js for interacting with the Ethereum blockchain."
                             github="github.com/saber1y/dappazon"
-                            link="/https://dappazon-nu.vercel.app"
+                            link="https://dappazon-nu.vercel.app"
                         />
                     </div>
 
@@ -63,11 +63,11 @@ const projects = () => {
 
                     <div className='col-span-6'>
                         <Project img={quizzer}
-                            title="Dappazon"
+                            title="Quizzer"
                             summary="Decentralized Version of Amazon, built with React(CRA), VanillaCss for styling and for 
                             Solidity, Hardhat,ethers.js all for backend functionality "
-                            github="github.com/saber1y/dappazon"
-                            link="/" />
+                            github="https://github.com/Saber1Y/Quiz-GO"
+                            link="https://quiz-go.vercel.app" />
                     </div>
                     <div className='col-span-6'>
                         <Project img={dappazon1}
