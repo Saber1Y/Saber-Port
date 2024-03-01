@@ -28,10 +28,9 @@ const projects = () => {
                         <FeaturedProject
                             img={dappazon1}
                             title="Dappazon"
-                            summary="Decentralized Version of Amazon, built with React(CRA), VanillaCss for styling and for 
-                            Solidity, Hardhat,ethers.js all for backend functionality "
+                            summary="Decentralized Version of Amazon, built with React (CRA) and Vanilla CSS for styling on the frontend. On the backend, it utilizes Solidity for smart contract development, Hardhat for Ethereum development environment setup, and ethers.js for interacting with the Ethereum blockchain."
                             github="github.com/saber1y/dappazon"
-                            link="/"
+                            link="/https://dappazon-nu.vercel.app"
                         />
                     </div>
 
@@ -41,10 +40,11 @@ const projects = () => {
                             summary="Starbucks cloned with Html, Css and Vanilla Css"
                             github="github.com/saber1y/dappazon"
                             link="https://star-bucks-clone-website-6xay.vercel.app" />
+
                     </div>
                     <div className='col-span-6'>
                         <Project img={Geritch}
-                            title="Geritch"                     
+                            title="Geritch"
                             summary="A demo fine dining website for Resutrants "
                             github="github.com/saber1y/dappazon"
                             link="https://restaurant-web-mu.vercel.apps" />

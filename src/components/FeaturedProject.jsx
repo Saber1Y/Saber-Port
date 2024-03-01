@@ -2,11 +2,12 @@ import React from "react";
 import Link from "next/link";
 import { GithubIcon } from "./icons";
 import Image from "next/image";
+import { BiCodeAlt } from "react-icons/bi";
 
 const FeaturedProject = ({ summary, title, img, github, link }) => {
   return (
     <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-4xl p-10 cursor-pointer relative">
-        {/* <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" /> */}
+      {/* <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" /> */}
       <Link
         href={link}
         target="_blank"
@@ -26,7 +27,7 @@ const FeaturedProject = ({ summary, title, img, github, link }) => {
             <GithubIcon className="w-10 h-10" />
           </Link>
           <Link href={link} target="_blank">
-            Live Link
+            <BiCodeAlt className="w-8 h-8" />
           </Link>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { GithubIcon } from "./icons";
 import Image from "next/image";
+import { BiCodeAlt } from "react-icons/bi";
 
 const Project = ({ title, img, link, github, summary }) => {
   return (
@@ -25,7 +26,7 @@ const Project = ({ title, img, link, github, summary }) => {
             <GithubIcon className="w-10 h-10" />
           </Link>
           <Link href={link} target="_blank">
-            Live Link
+            <BiCodeAlt className="w-8 h-8" />
           </Link>
         </div>
       </div>
