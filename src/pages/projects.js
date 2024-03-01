@@ -6,6 +6,8 @@ import { FeaturedProject, Project } from '../index'
 import dappazon1 from '../../public/images/project/dappazon.png';
 import starbucks from '../../public/images/project/starbucks.jpg';
 import Geritch from '../../public/images/project/Geritch.jpg';
+import quizzer from '../../public/images/project/quizzer.png';
+import { BiCodeAlt } from 'react-icons/bi';
 
 const projects = () => {
     return (
@@ -60,7 +62,7 @@ const projects = () => {
                     </div>
 
                     <div className='col-span-6'>
-                        <Project img={dappazon1}
+                        <Project img={quizzer}
                             title="Dappazon"
                             summary="Decentralized Version of Amazon, built with React(CRA), VanillaCss for styling and for 
                             Solidity, Hardhat,ethers.js all for backend functionality "
