@@ -31,8 +31,9 @@ const projects = () => {
                             summary="Decentralized Version of Amazon, built with React (CRA) and Vanilla CSS for styling on the frontend. On the backend, it utilizes Solidity for smart contract development, Hardhat for Ethereum development environment setup, and ethers.js for interacting with the Ethereum blockchain."
                             github="github.com/saber1y/dappazon"
                             link="https://dappazon-nu.vercel.app"
-                            // stack={["React (CRA)", "Vanilla CSS", "Solidity", "Hardhat", "ethers.js"]}
+                            stack={["React (CRA)", "Vanilla CSS", "Solidity", "Hardhat", "ethers.js"]}
                         />
+
                     </div>
 
                     <div className='col-span-6'>

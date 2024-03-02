@@ -22,14 +22,14 @@ const FeaturedProject = ({ summary, title, img, github, link, stack }) => {
           {title}
         </h2>
         <p className="capitalize">{summary}</p>
-        {/* <div>
+        <div>
           Built with :
-          <ul>
+          {/* <ul>
             {stack.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
-          </ul>
-        </div> */}
+          </ul> */}
+        </div>
 
         <div className="flex space-x-3 items-center">
           <Link href={github} target="_blank">
