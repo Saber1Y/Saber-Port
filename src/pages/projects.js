@@ -31,13 +31,14 @@ const projects = () => {
                             summary="Decentralized Version of Amazon, built with React (CRA) and Vanilla CSS for styling on the frontend. On the backend, it utilizes Solidity for smart contract development, Hardhat for Ethereum development environment setup, and ethers.js for interacting with the Ethereum blockchain."
                             github="github.com/saber1y/dappazon"
                             link="https://dappazon-nu.vercel.app"
+                            // stack={["React (CRA)", "Vanilla CSS", "Solidity", "Hardhat", "ethers.js"]}
                         />
                     </div>
 
                     <div className='col-span-6'>
                         <Project img={starbucks}
                             title="Starbucks Clone"
-                            summary="Starbucks cloned with Html, Css and Vanilla Css"
+                            summary="Starbucks clone project developed using HTML, CSS, and Vanilla CSS, showcasing proficiency in front-end web development. Implemented pixel-perfect design to closely mimic the original Starbucks website, emphasizing attention to detail and design fidelity. Applied modern CSS techniques such as flexbox and grid layouts for responsive and visually appealing UI/UX."
                             github="github.com/saber1y/dappazon"
                             link="https://star-bucks-clone-website-6xay.vercel.app" />
 
@@ -45,7 +46,7 @@ const projects = () => {
                     <div className='col-span-6'>
                         <Project img={Geritch}
                             title="Geritch"
-                            summary="A demo fine dining website for Resutrants "
+                            summary="A demo fine dining website designed and developed to showcase restaurant concepts and culinary experiences. Crafted using modern web technologies including HTML5, CSS3, and JavaScript, demonstrating expertise in front-end web development. Implemented a visually stunning and responsive design, ensuring seamless user experience across devices."
                             github="github.com/saber1y/dappazon"
                             link="https://restaurant-web-mu.vercel.apps" />
                     </div>
@@ -64,8 +65,7 @@ const projects = () => {
                     <div className='col-span-6'>
                         <Project img={quizzer}
                             title="Quizzer"
-                            summary="Decentralized Version of Amazon, built with React(CRA), VanillaCss for styling and for 
-                            Solidity, Hardhat,ethers.js all for backend functionality "
+                            summary="An engaging quiz application designed with a user-friendly interface, integrated timer, and dynamic scoring system to challenge users of all levels. Featuring randomized questions to keep each session fresh and exciting, this application caters to trivia enthusiasts, students, and anyone looking for a fun way to test their knowledge. Developed with HTML, CSS, and JavaScript for the frontend, the application boasts a sleek design achieved with Vanilla CSS."
                             github="https://github.com/Saber1Y/Quiz-GO"
                             link="https://quiz-go.vercel.app" />
                     </div>
