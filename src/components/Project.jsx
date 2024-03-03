@@ -21,7 +21,11 @@ const Project = ({ title, img, link, github, summary, stack }) => {
           {title}
         </h2>
         <p className="capitalize">{summary}</p>
-        <div>Built with :{stack}</div>
+
+        <span className="text-2xl font-light">Built with: </span>
+
+        <div>{stack}</div>
+
         <div className="flex space-x-3 items-center">
           <Link href={github} target="_blank">
             <motion.div whileHover={{ y: -2 }}>
