@@ -31,7 +31,7 @@ const projects = () => {
                             summary="Decentralized Version of Amazon, built with React (CRA) and Vanilla CSS for styling on the frontend. On the backend, it utilizes Solidity for smart contract development, Hardhat for Ethereum development environment setup, and ethers.js for interacting with the Ethereum blockchain."
                             github="github.com/saber1y/dappazon"
                             link="https://dappazon-nu.vercel.app"
-                            stack={["React (CRA)", "Vanilla CSS", "Solidity", "Hardhat", "ethers.js"]}
+                            // stack={["React (CRA)", "Vanilla CSS", "Solidity", "Hardhat", "ethers.js"]}
                         />
 
                     </div>
@@ -48,7 +48,7 @@ const projects = () => {
                         <Project img={Geritch}
                             title="Geritch"
                             summary="A demo fine dining website designed and developed to showcase restaurant concepts and culinary experiences. Crafted using modern web technologies including HTML5, CSS3, and JavaScript, demonstrating expertise in front-end web development. Implemented a visually stunning and responsive design, ensuring seamless user experience across devices."
-                            github="github.com/saber1y/dappazon"
+                            github="https://github.com/Saber1Y/RESTAURANT-WEB"
                             link="https://restaurant-web-mu.vercel.apps" />
                     </div>
 

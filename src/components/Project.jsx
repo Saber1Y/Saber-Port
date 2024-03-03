@@ -21,16 +21,19 @@ const Project = ({ title, img, link, github, summary, stack }) => {
           {title}
         </h2>
         <p className="capitalize">{summary}</p>
-        <div>Built with :
-            {stack}
-        </div>
+        <div>Built with :{stack}</div>
         <div className="flex space-x-3 items-center">
-          <motion.div whileHover={{ y: -2 }}>
-            <GithubIcon className="w-10 h-10" />
-          </motion.div>
-          <motion.div whileHover={{ y: -2 }}>
-            <BiCodeAlt className="w-5 h-5" />
-          </motion.div>
+          <Link href={github} target="_blank">
+            <motion.div whileHover={{ y: -2 }}>
+              <GithubIcon className="w-10 h-10" />
+            </motion.div>
+          </Link>
+
+          <Link href={link} target="_blank">
+            <motion.div whileHover={{ y: -2 }}>
+              <BiCodeAlt className="w-5 h-5" />
+            </motion.div>
+          </Link>
         </div>
       </div>
     </article>

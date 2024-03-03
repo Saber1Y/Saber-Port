@@ -34,7 +34,7 @@ const FeaturedProject = ({ summary, title, img, github, link, stack }) => {
         <div className="flex space-x-3 items-center">
           <Link href={github} target="_blank">
             <motion.div whileHover={{ y: -2 }}>
-              <GithubIcon className="w-11 h-11" />
+              <GithubIcon className="w-12 h-12" />
             </motion.div>
           </Link>
 

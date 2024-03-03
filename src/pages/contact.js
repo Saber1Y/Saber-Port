@@ -60,7 +60,7 @@ const contact = () => {
                                         name="first-name"
                                         id="first-name"
                                         autoComplete="given-name"
-                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to-tr focus:from-[#ff80b5] focus:to-[#9089fc] sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to-tr focus:from-[#ff80b5] focus:to-[#9089fc] sm:text-sm sm:leading-6 focus:outline-none"
                                     />
                                 </div>
                             </div>
@@ -74,7 +74,7 @@ const contact = () => {
                                         name="last-name"
                                         id="last-name"
                                         autoComplete="family-name"
-                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to-tr focus:from-[#ff80b5] focus:to-[#9089fc] sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to-tr focus:from-[#ff80b5] focus:to-[#9089fc] sm:text-sm sm:leading-6 focus:outline-none"
                                     />
                                 </div>
                             </div>
@@ -88,8 +88,9 @@ const contact = () => {
                                         name="email"
                                         id="email"
                                         autoComplete="email"
-                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to-tr focus:from-[#ff80b5] focus:to-[#9089fc] sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] focus:outline-none"
                                     />
+
                                 </div>
                             </div>
                             <div className="sm:col-span-2">
@@ -116,20 +117,19 @@ const contact = () => {
                                         type="tel"
                                         name="phone-number"
                                         autoComplete="tel"
-                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to-tr focus:from-[#ff80b5] focus:to-[#9089fc] sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to-tr focus:from-[#ff80b5] focus:to-[#9089fc] sm:text-sm sm:leading-6 focus:outline-none"
                                     />
                                 </div>
                             </div>
                             <div className="sm:col-span-2">
-                                <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+                                <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900 focus:outline-none">
                                     Message
                                 </label>
                                 <div className="mt-2.5">
                                     <textarea
                                         name="message"
-
                                         rows={4}
-                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to-tr focus:from-[#ff80b5] focus:to-[#9089fc] sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] placeholder:text-gray-400  focus:outline-none sm:text-sm sm:leading-6"
                                         defaultValue={''}
                                     />
                                 </div>
