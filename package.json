@@ -1,5 +1,5 @@
 {
-  "name": "Saber's Portfolio",
+  "name": "Sabers-Portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
     "framer-motion": "^10.16.16",
