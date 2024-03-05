@@ -10,8 +10,8 @@ import Link from "next/link";
 import { ValidationError, useForm } from "@formspree/react";
 
 const contact = () => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [state, handleSubmit] = useForm("xgegyjyy");
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const [state, handleSubmit] = useForm("xgegyjyy");
 
     return (
         <>
