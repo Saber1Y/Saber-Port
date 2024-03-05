@@ -87,6 +87,7 @@ const projects = () => {
                         />
                     </div>
 
+
                     <div className='col-span-6'>
                         <Project img={quizzer}
                             title="Quizzer"

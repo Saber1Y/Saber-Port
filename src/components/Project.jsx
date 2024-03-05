@@ -28,14 +28,14 @@ const Project = ({ title, img, link, github, summary, stack }) => {
 
         <div className="flex space-x-3 items-center">
           <Link href={github} target="_blank">
-            <motion.div whileHover={{ y: -2 }}>
+            <motion.div whileHover={{ y: -2 }} className="w-6">
               <GithubIcon className="w-10 h-10" />
             </motion.div>
           </Link>
 
           <Link href={link} target="_blank">
-            <motion.div whileHover={{ y: -2 }}>
-              <BiCodeAlt className="w-5 h-5" />
+            <motion.div whileHover={{ y: -2 }} className="w-6">
+              <BiCodeAlt className="w-8 h-8" />
             </motion.div>
           </Link>
         </div>

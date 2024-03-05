@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Contact from "./pages/contact";
 import FeaturedProject from "./components/FeaturedProject";
 import Project from "./components/Project";
+import ProgressBar from "./components/ProgressBar";
 
 
 export {
@@ -19,4 +20,5 @@ export {
     Contact,
     FeaturedProject,
     Project,
+    ProgressBar
 }
