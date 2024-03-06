@@ -4,8 +4,8 @@ const ProgressBar = ({ name, percentage }) => {
   return (
     <>
       <div className="flex justify-between mb-1 w-3/4">
-        <span className="text-base font-medium text-blue-700">{name}</span>
-        <span className="text-sm font-medium text-blue-700">{percentage}%</span>
+        <span className="text-2xl mt-3 font-medium text-black-500">{name}</span>
+        <span className="text-2xl mt-3 font-medium text-black-500">{percentage}%</span>
       </div>
       <div className="w-3/4 bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
         <div

@@ -8,9 +8,9 @@ const Skills = () => {
       <h2 className="font-bold text-4xl mt-24 w-full text-center lg:text-8xl">
         Skills
       </h2>
-      <p className="text-3xl font-bold text-center">Languages & Tech Stack: </p>
-      <div className="flex justify-between w-full my-3 mx-10">
-        <div className="grid grid-cols-3 gap-3 w-1/2 space-y-2">
+      <p className="text-3xl font-bold text-center">Languages & Soft Skills: </p>
+      <div className="flex justify-between w-full my-5 mx-10">
+        <div className="grid grid-cols-3  w-1/2 space-y-2">
           <motion.svg
             viewBox="0 0 128 128"
             width="50"
@@ -172,11 +172,11 @@ const Skills = () => {
         </div>
 
         <div className="w-1/2 ">
-          <ProgressBar name={"game"} percentage={"10"} />
-          <ProgressBar name={"game"} percentage={"10"} />
-          <ProgressBar name={"game"} percentage={"10"} />
-          <ProgressBar name={"game"} percentage={"10"} />
-          <ProgressBar name={"game"} percentage={"10"} />
+          <ProgressBar name={"Problem Solving"} percentage={"40"} />
+          <ProgressBar name={"Effective Communication"} percentage={"80"} />
+          <ProgressBar name={"Work Ethic"} percentage={"50"} />
+          <ProgressBar name={"Team-Work"} percentage={"60"} />
+          <ProgressBar name={"Adaptablilty & Flexibility"} percentage={"90"} />
         </div>
       </div>
     </>
