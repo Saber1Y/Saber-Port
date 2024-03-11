@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { Footer, Navbar } from '../index';
 import { AnimatePresence } from 'framer-motion';
 import { useRouter } from "next/router";
+import MainBar from '@/components/MainBar';
 
 
 
@@ -23,7 +24,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="./favicon.ico" />
       </Head>
       <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen text-dark`}>
-        <Navbar />
+        <MainBar />
         <AnimatePresence mode='wait'>
           <Component key={router.asPath}  {...pageProps} />
         </AnimatePresence>

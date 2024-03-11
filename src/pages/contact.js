@@ -54,7 +54,7 @@ const contact = () => {
                     <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                             <div>
-                                <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                                <label htmlFor="first-name" className="block text-base font-semibold leading-6 text-gray-900">
                                     First name
                                 </label>
                                 <div className="mt-2.5">
@@ -64,11 +64,12 @@ const contact = () => {
                                         id="first-name"
                                         autoComplete="given-name"
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to-tr focus:from-[#ff80b5] focus:to-[#9089fc] sm:text-sm sm:leading-6 focus:outline-none"
+                                        required
                                     />
                                 </div>
                             </div>
                             <div>
-                                <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                                <label htmlFor="last-name" className="block text-base font-semibold leading-6 text-gray-900">
                                     Last name
                                 </label>
                                 <div className="mt-2.5">
@@ -78,11 +79,13 @@ const contact = () => {
                                         id="last-name"
                                         autoComplete="family-name"
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to-tr focus:from-[#ff80b5] focus:to-[#9089fc] sm:text-sm sm:leading-6 focus:outline-none"
+                                        required
+
                                     />
                                 </div>
                             </div>
                             <div className="sm:col-span-2">
-                                <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+                                <label htmlFor="email" className="block text-base font-semibold leading-6 text-gray-900" a>
                                     Email
                                 </label>
                                 <div className="mt-2.5">
@@ -92,12 +95,13 @@ const contact = () => {
                                         id="email"
                                         autoComplete="email"
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] focus:outline-none"
+                                        required
                                     />
 
                                 </div>
                             </div>
                             <div className="sm:col-span-2">
-                                <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
+                                <label htmlFor="phone-number" className="block text-base font-semibold leading-6 text-gray-900">
                                     Phone number
                                 </label>
                                 <div className="relative mt-2.5">
@@ -121,6 +125,7 @@ const contact = () => {
                                         name="phone-number"
                                         autoComplete="tel"
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to-tr focus:from-[#ff80b5] focus:to-[#9089fc] sm:text-sm sm:leading-6 focus:outline-none"
+
                                     />
                                 </div>
                             </div>
@@ -134,6 +139,8 @@ const contact = () => {
                                         rows={4}
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gradient-to-tr from-[#ff80b5] to-[#9089fc] placeholder:text-gray-400  focus:outline-none sm:text-sm sm:leading-6"
                                         defaultValue={''}
+                                        required
+
                                     />
                                 </div>
                             </div>

@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-full border-t-2 border-solid border-dark font-medium text-lg ">
-      <div className="flex-col md:flex md:flex-row md:items-center md:justify-between md:m-2">
+    <div className="w-full border-t-2 border-solid border-dark font-medium text-lg my-3">
+      <div className="flex-col md:flex md:flex-row md:items-center md:justify-between md:m-2 my-3">
         <span className="cursor-pointer">
           {new Date().getFullYear()} &copy; All Rights Reserved.{" "}
         </span>
@@ -12,7 +12,8 @@ const Footer = () => {
           <div>
             <span>Send Donations</span>:
             <span className="underline decorate-blue-500 cursor-pointer">
-              {" "}0x11f7eaC93C9DD552DFD657BE52007A25E200f356
+              {" "}
+              0x11f7eaC93C9DD552DFD657BE52007A25E200f356
             </span>
           </div>
           <Link
