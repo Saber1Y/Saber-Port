@@ -13,7 +13,7 @@ const Copy = ({ icon, text }) => {
   return (
     <div>
       <button onClick={copyText}>{icon}</button>
-      {copied && <span>text Copied!</span>}
+      {copied && <span>Copied!</span>}
     </div>
   );
 };
