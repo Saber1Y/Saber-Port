@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="flex flex-row">
             <span>Send Donations:</span>
             <span className="flex items-center">
-              <span className="underline decorate-blue-500 cursor-pointer">
+              <span className="underline decorate-blue-500 cursor-pointer ml-1">
                 0x11f7eaC93C9DD552DFD657BE52007A25E200f356
               </span>
               <Copy
