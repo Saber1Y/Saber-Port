@@ -109,7 +109,7 @@ const projects = () => {
                         <Project img={Movie}
                             title="Movie-Verse"
                             summary="Explore the world of cinema with our movie research website. Powered by an API, our platform allows users to effortlessly search for any movie and retrieve comprehensive information. Built using jQuery.js for dynamic interactions and Sass for sleek styling, our website offers a seamless browsing experience. Dive into a vast database of films, discover hidden gems, and stay up-to-date with the latest releases. Your ultimate destination for movie enthusiasts. "
-                            github="github.com/saber1y/dappazon"
+                            github="https://github.com/Saber1Y/MOVIE-DB"
                             link="https://movie-verse-drab.vercel.app/"
                             stack={
                                 <ul className='my-2 list-style-disc'>
