@@ -7,6 +7,7 @@ import dappazon1 from '../../public/images/project/dappazon.png';
 import starbucks from '../../public/images/project/starbucks.jpg';
 import Geritch from '../../public/images/project/Geritch.jpg';
 import quizzer from '../../public/images/project/quizzer.png';
+import Movie from '../../public/images/project/movieverse.jpg';
 import { BiCodeAlt } from 'react-icons/bi';
 
 const projects = () => {
@@ -105,12 +106,20 @@ const projects = () => {
                         />
                     </div>
                     <div className='col-span-6'>
-                        <Project img={dappazon1}
-                            title="Dappazon"
-                            summary="Decentralized Version of Amazon, built with React(CRA), VanillaCss for styling and for 
-                            Solidity, Hardhat,ethers.js all for backend functionality "
+                        <Project img={Movie}
+                            title="Movie-Verse"
+                            summary="Explore the world of cinema with our movie research website. Powered by an API, our platform allows users to effortlessly search for any movie and retrieve comprehensive information. Built using jQuery.js for dynamic interactions and Sass for sleek styling, our website offers a seamless browsing experience. Dive into a vast database of films, discover hidden gems, and stay up-to-date with the latest releases. Your ultimate destination for movie enthusiasts. "
                             github="github.com/saber1y/dappazon"
-                            link="/" />
+                            link="https://movie-verse-drab.vercel.app/"
+                            stack={
+                                <ul className='my-2 list-style-disc'>
+                                    <li className='uppercase'>Html 5</li>
+                                    <li className='uppercase'>Sass</li>
+                                    <li className='uppercase'>Jquery</li>
+                                </ul>
+                            }
+                        />
+
                     </div>
 
                 </div>
